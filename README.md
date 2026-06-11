@@ -18,11 +18,15 @@ DiagnosticTS/
 ├── utils/               # Metric auditor (metrics.py) and complementary area-spectrum visualization
 ├── config.py            # Centralized hyperparameter definitions
 └── main.py              # Main operations controller
-⚡ Quick Start
-1. Environment Setup
-Bash
+
+```
+
+## ⚡ Quick Start
+
+### 1. Environment Setup
+```bash
 # Clone the repository
-git clone [https://github.com/xzxmyr/Orthogonal-TSF.git](https://github.com/xzxmyr/Orthogonal-TSF.git)
+git clone https://github.com/xzxmyr/Orthogonal-TSF.git
 cd DiagnosticTS
 
 # Create and activate virtual environment
@@ -31,14 +35,9 @@ source venv/bin/activate
 
 # Install dependencies
 pip install torch numpy pandas matplotlib
-2. Run Pipeline
-Place your target multi-variable sequential data (e.g., ETTm1.csv) under your designated path, modify config.py, and run the controller:
+```
+### 2. Run Pipeline
+Place your target multi-variable sequential data (e.g., `ETTm1.csv`) under your designated path, modify `config.py`, and run the controller:
 
-Bash
+```bash
 python main.py
-📄 AI Transparency & Accountability Statement
-In accordance with academic integrity frameworks, this repository utilizes Digital Intelligence (DI) tools for architectural logic modularization and visualization refactoring.
-
-Human Intelligence (HI) Contribution: Mathematical proof formulation, spatiotemporal explicit encoder design, causal reasoning spectrum logic, and research conceptual framework are the independent work of the author.
-
-Digital Intelligence (DI) Assistance: Code structure modularization, MLOps flattening refactoring, and Matplotlib backend visualization tuning guided by Gemini.
