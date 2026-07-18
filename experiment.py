@@ -141,28 +141,61 @@ class DisentangledProposedModel(nn.Module):
         preds = self.predictor(z_fused_last).view(B, self.pred_len, F)
         
         return preds, z1, z2, gate_weights
+
 def plot_and_save_weights(temporal_weights, spatial_weights, save_path="weight_dynamics.png"):
     """
-    可视化时空解耦的权重分配趋势
+    更新后的可视化：利用 w1 + w2 = 1 的特性，绘制单折线边界并填充上下双色。
     """
-    # 确保是 numpy 数组
-    t_weights = np.array(temporal_weights)
-    s_weights = np.array(spatial_weights)
+    # 1. 转换为 numpy 数组
+    w1 = np.array(temporal_weights)
     
-    # 如果权重是按步长记录的，这里进行平均计算
-    # 假设每个时间步长有一组权重
-    plt.figure(figsize=(10, 6), dpi=300)
-    plt.plot(t_weights, label='Temporal Pattern Weight (w1)', color='#1f77b4', linewidth=2)
-    plt.plot(s_weights, label='Variable Coupling Weight (w2)', color='#ff7f0e', linewidth=2)
+    # 【核心优化】：如果测试集样本过多，直接画图会产生密集毛刺。
+    # 这里使用滑动平均（Window=50）对权重进行平滑，以展现优雅的宏观演变趋势
+    window_size = 50
+    if len(w1) > window_size:
+        w1_smooth = pd.Series(w1).rolling(window=window_size, min_periods=1).mean().values
+    else:
+        w1_smooth = w1
+        
+    x_axis = np.arange(len(w1_smooth))
     
-    plt.title('Dynamic Weight Allocation: Temporal vs. Spatial Decoupling', fontsize=14)
-    plt.xlabel('Training Steps / Observations', fontsize=12)
-    plt.ylabel('Weight Proportion', fontsize=12)
-    plt.legend()
-    plt.grid(True, linestyle='--', alpha=0.6)
+    # 2. 初始化高分辨率画布
+    plt.figure(figsize=(12, 5.5), dpi=300)
     
+    # 3. 绘制核心分割折线 (代表 w1 的动态边界)
+    # 使用深色调优雅分割
+    plt.plot(x_axis, w1_smooth, color='#2C3E50', lw=1.8, linestyle='-', label='Decoupling Boundary ($w_1$)')
+    
+    # 4. 区域色彩填充
+    # 上方填充 w2 的颜色 (从 w1_smooth 曲线一直填充到 y=1.0) -> 代表变量耦合空间权重
+    plt.fill_between(x_axis, w1_smooth, 1.0, color='#3498DB', alpha=0.75, 
+                     label='Variable Coupling Weight ($w_2$)')
+    
+    # 下方填充 w1 的颜色 (从 y=0.0 一直填充到 w1_smooth 曲线) -> 代表纯时间规律权重
+    plt.fill_between(x_axis, 0.0, w1_smooth, color='#E74C3C', alpha=0.75, 
+                     label='Temporal Pattern Weight ($w_1$)')
+    
+    # 5. 图像美化与学术规范
+    plt.xlim(x_axis[0], x_axis[-1])
+    plt.ylim(0.0, 1.0)  # 严格限制在 0-1 范围内
+    
+    plt.xlabel("Test Set Observations (Chronological Samples)", fontsize=11, labelpad=8)
+    plt.ylabel("Weight Contribution Proportion", fontsize=11, labelpad=8)
+    plt.title("Dynamic Weight Allocation Spectrum ($w_1 + w_2 = 1$)", fontsize=13, fontweight='bold', pad=15)
+    
+    # 6. 网格线与边框精简 (去除了顶部和右侧多余边框，使版面更具现代学术感)
+    plt.grid(axis='x', color='gray', linestyle='--', alpha=0.25)
+    plt.gca().spines['top'].set_visible(False)
+    plt.gca().spines['right'].set_visible(False)
+    
+    # 7. 图例位置优化 (放置在图表正上方或右上角空旷处)
+    plt.legend(loc='upper right', frameon=True, facecolor='white', edgecolor='none', shadow=True, fontsize=10)
+    
+    # 8. 调整布局并保存
+    plt.tight_layout()
     plt.savefig(save_path)
-    print(f"可视化图像已保存至: {save_path}")
+    plt.close()
+    print(f"🎉 完美的双色互补权重动态谱图已保存至: {save_path}")
 
 
 # ==========================================
@@ -179,7 +212,7 @@ def run_comparison_experiment():
     LAMBDA_ORT = 0.1 # 正交正则化系数 (控制解耦强度)
     
     # 实例化数据集与加载器
-    dataset = RealMTSDataset(csv_path='/Users/xixiangyu/Desktop/03_个人发展与项目/surf/ETT-small/ETTh1.csv', seq_len=SEQ_LEN, pred_len=PRED_LEN)
+    dataset = RealMTSDataset(csv_path='/Users/xixiangyu/Desktop/03_个人发展与项目/surf/data/ETTm1.csv', seq_len=SEQ_LEN, pred_len=PRED_LEN)
 
     # 简单划分训练集与测试集 (8:2)
     train_size = int(0.8 * len(dataset))
