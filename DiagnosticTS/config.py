@@ -1,6 +1,8 @@
+from pathlib import Path
+
 # config.py
 class ExperimentConfig:
-    csv_path = '/Users/xixiangyu/Desktop/03_个人发展与项目/surf/data/ETTm1.csv'
+    csv_path = str(Path(__file__).resolve().parents[1] / 'data' / 'ETTm1.csv')
     save_path = 'weight_dynamics.png'
     
     seq_len = 96

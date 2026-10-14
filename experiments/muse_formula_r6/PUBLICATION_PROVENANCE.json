@@ -1,0 +1,25 @@
+{
+  "publication_date": "2026-10-14",
+  "source_round": "R6",
+  "no_retraining": true,
+  "checkpoint_bytes_unchanged": true,
+  "metrics_bytes_unchanged": true,
+  "source_files": {
+    "PROTOCOL_FROZEN.md": {
+      "original_sha256": "eaa17da8b614d80aea16d18134d84a132f4c25a72cc2ce1e8e43f9371f4c45d3",
+      "published_sha256": "fb90cbd4c6d5d739f977b75715b7769193b48d5217434c3f2d29206df02eafe5",
+      "change": "remove private coordination metadata"
+    },
+    "REPORT.md": {
+      "original_sha256": "edce25d3e98122d70dca563830f5a00126732f8ba2d6bf6b62791b0869270432",
+      "published_sha256": "640a7d197ffd3c270233a6d125548308804c57a8cc3b3655c180b9eb2d6c8fc0",
+      "change": "remove private coordination metadata"
+    }
+  },
+  "omitted_files": [
+    "artifacts/*/points.npz",
+    "*.log",
+    "__pycache__/*"
+  ],
+  "omission_reason": "deterministically regenerable prediction caches and local runtime metadata"
+}

@@ -1,0 +1,10 @@
+The MIT license covers first-party source code, documentation, and the generated
+synthetic R6 checkpoint files in this release. Dependencies are not bundled and
+retain their own licenses. NumPy and SciPy are external dependencies.
+
+No third-party industrial datasets, simulator distributions, paper PDFs, or
+personal coordination logs are included in this release package.
+
+The historical DiagnosticTS directory in the GitHub repository is retained for
+historical source reference. It is not required by the R6 package, and old CMI
+or causal-attribution interpretations are not validated by this release.

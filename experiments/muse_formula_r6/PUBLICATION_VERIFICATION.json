@@ -1,0 +1,24 @@
+{
+  "configurations_checked": 72,
+  "frozen_sources_unchanged": 3,
+  "future_isolation_points_per_model": 1,
+  "manifest": {
+    "files_checked": 2690,
+    "status": "passed"
+  },
+  "max_errors": {
+    "closure_abs_error": 9.769962616701378e-15,
+    "future_isolation_abs_error": 0.0,
+    "prediction_mse_abs_error": 1.1102230246251565e-16,
+    "singleton_abs_error": 1.4210854715202004e-14,
+    "source_mse_abs_error": 0.0,
+    "structural_mse_abs_error": 1.1102230246251565e-16
+  },
+  "metric_atol": 1e-08,
+  "metric_rtol": 1e-10,
+  "models_checked": 2592,
+  "no_fit_calls": true,
+  "passed": true,
+  "points_npz_required": false,
+  "publication_redactions": 1
+}

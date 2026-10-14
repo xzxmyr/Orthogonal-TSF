@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "whitening_identity_max": 4.440892098500626e-16,
+  "posterior_dense_check": 0.0,
+  "fallback_cases": true,
+  "group_redundancy": {
+    "columns": 3,
+    "rank": 2,
+    "identifiable": false,
+    "condition": null,
+    "nonzero_condition": 1.796042081049692,
+    "singular_values": [
+      17.474055947470006,
+      9.729201855480659,
+      2.7680780148412518e-15
+    ],
+    "group_ranks": {
+      "T": 1,
+      "M": 1,
+      "J": 0
+    }
+  },
+  "innovation_nll_dense_error": 5.329070518200751e-15,
+  "optimizer_preflight_calls": 1,
+  "optimizer_preflight": {
+    "rho": 0.7593802063266919,
+    "state_variance": 0.30466620775163095,
+    "Q": 0.12897791100434658,
+    "R": 0.08186588309966597,
+    "gamma": [
+      0.3880086775317508,
+      0.23347041294813525,
+      0.177163962871538
+    ],
+    "fallback": null,
+    "method": "innovation_residual_ml",
+    "optimization": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nfev": 40,
+      "nit": 6,
+      "iid_nll": 378.22989831458955,
+      "ar_nll": 284.13166739242547,
+      "bic_required_improvement": 11.982929094215963,
+      "boundary": false,
+      "theta": [
+        0.7593802063266919,
+        0.7852046240040601,
+        0.2109898253318494
+      ],
+      "start": [
+        0.7588283270432833,
+        0.7929519626153313,
+        0.20704803738466868
+      ]
+    }
+  }
+}

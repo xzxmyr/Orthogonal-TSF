@@ -1,0 +1,93 @@
+{
+  "seeds": [
+    1429,
+    1543,
+    1663
+  ],
+  "designs": [
+    "regular",
+    "correlated",
+    "overlap"
+  ],
+  "period": [
+    0,
+    1
+  ],
+  "interaction": [
+    0,
+    1
+  ],
+  "ar": [
+    0,
+    1
+  ],
+  "specs": {
+    "clean": {},
+    "underfit": {
+      "underfit": true
+    },
+    "anchor": {
+      "anchor": [
+        2.0,
+        -1.0
+      ]
+    }
+  },
+  "estimators": [
+    "generation",
+    "filtered",
+    "gls",
+    "likelihood"
+  ],
+  "history": [
+    "first",
+    "state",
+    "fixed"
+  ],
+  "split": {
+    "base": [
+      1,
+      1200
+    ],
+    "structure": [
+      1201,
+      2400
+    ],
+    "history": [
+      2401,
+      3600
+    ],
+    "holdout": [
+      3601,
+      4800
+    ]
+  },
+  "sha": {
+    "model.py": "bef4a3e1ab59fea935bc82f330b0272e1007686020f10ec1d61e9f1db48e56c3",
+    "run.py": "37527a72cb8162a81065c7051b5cf5917d8eb354d2b7beefcd09bcab6c160744",
+    "PROTOCOL_FROZEN.md": "eaa17da8b614d80aea16d18134d84a132f4c25a72cc2ce1e8e43f9371f4c45d3",
+    "FORMULA_REVIEW.md": "8f7cb91948f479e2bbb63d5d1195c80a8c2e2511b2beaaf2839b59655fc98b82"
+  },
+  "likelihood": {
+    "method": "innovation residual ML (not REML)",
+    "bounds": [
+      [
+        0.001,
+        0.975
+      ],
+      [
+        1e-06,
+        4.0
+      ],
+      [
+        1e-06,
+        4.0
+      ]
+    ],
+    "maxiter": 35,
+    "maxfun": 160,
+    "maxls": 10,
+    "IID_selection": "AR requires 2*(IID_NLL-AR_NLL)>2*log(n)",
+    "anchor_reuses_clean_covariance": true
+  }
+}

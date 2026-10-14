@@ -1,42 +1,21 @@
-# ==========================================
-# 过滤 Python 虚拟环境与依赖缓存
-# ==========================================
-venv/
+# Local runtimes and generated files
 .venv/
+venv/
 env/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 .pytest_cache/
-.ipynb_checkpoints/
-
-# ==========================================
-# 过滤本地 IDE 配置文件（防止污染他人编辑器）
-# ==========================================
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.swp
-
-# ==========================================
-# 过滤本地大型数据集与大文件（GitHub 单文件限流 100M）
-# ==========================================
-*.csv
-*.xlsx
-data/
-
-# ==========================================
-# 过滤本地运行产生的图片与临时输出
-# ==========================================
-*.png
-*.jpg
-*.jpeg
-*.pdf
-outputs/.DS_Store
-**/ .DS_Store
 .DS_Store
 **/.DS_Store
+.vscode/
+.idea/
+# External data, local model runs, and downloaded release files
+data/
+DiagnosticTS/outputs/
+*.zip
+# Full frozen R6 checkpoint/metric bundle is distributed through GitHub Releases
+experiments/muse_formula_r6/artifacts/*/*.npz
+experiments/muse_formula_r6/artifacts/metrics.json
+# Regenerable pointwise prediction caches
+**/points.npz
+*.log

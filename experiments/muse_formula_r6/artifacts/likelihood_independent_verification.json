@@ -1,0 +1,1015 @@
+{
+  "passed": true,
+  "no_fit": true,
+  "fits": 144,
+  "checks": [
+    {
+      "id": "s1429_regular_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 4.5361048250924796e-11,
+      "nfev": 116,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_regular_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 1.3983481039758772e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 6.0254023992456496e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 6.59383658785373e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 1.602984411874786e-11,
+      "nfev": 108,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_regular_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 7.844391802791506e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 2.1032064978498966e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 1.0459189070388675e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 1.6825651982799172e-11,
+      "nfev": 100,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_regular_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 2.5011104298755527e-12,
+      "nfev": 32,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.659827830735594e-11,
+      "nfev": 48,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 1.3642420526593924e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 3.2514435588382185e-11,
+      "nfev": 100,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_regular_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 4.661160346586257e-12,
+      "nfev": 32,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 4.433786671143025e-12,
+      "nfev": 48,
+      "fallback": null
+    },
+    {
+      "id": "s1429_regular_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 3.637978807091713e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 2.7284841053187847e-11,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_correlated_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 4.092726157978177e-12,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_correlated_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 2.1373125491663814e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 1.944044925039634e-11,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 2.2964741219766438e-11,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_correlated_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 2.2737367544323206e-12,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_correlated_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.5006662579253316e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 6.59383658785373e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 1.4210854715202004e-11,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_correlated_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 1.2278178473934531e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.602984411874786e-11,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 1.1709744285326451e-11,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 2.6830093702301383e-11,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_correlated_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 2.8990143619012088e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.375610736431554e-11,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1429_correlated_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 7.16227077646181e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 3.205968823749572e-11,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_overlap_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 2.0804691303055733e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 2.0236257114447653e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 7.73070496506989e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 4.1382008930668235e-11,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_overlap_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 4.206412995699793e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.3073986337985843e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 1.375610736431554e-11,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 2.5011104298755527e-12,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_overlap_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 1.9326762412674725e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 9.777068044058979e-12,
+      "nfev": 52,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 1.1709744285326451e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 2.9331204132176936e-11,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1429_overlap_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 1.3528733688872308e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.3869794202037156e-11,
+      "nfev": 52,
+      "fallback": null
+    },
+    {
+      "id": "s1429_overlap_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 3.637978807091713e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 2.6716406864579767e-11,
+      "nfev": 92,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_regular_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 1.1823431123048067e-11,
+      "nfev": 84,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_regular_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 4.774847184307873e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 9.549694368615746e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 4.320099833421409e-11,
+      "nfev": 92,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_regular_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 1.4438228390645236e-11,
+      "nfev": 84,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_regular_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.887201506178826e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 8.86757334228605e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 1.5916157281026244e-11,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_regular_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 1.1141310096718371e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 2.1600499167107046e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 7.503331289626658e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 1.1709744285326451e-11,
+      "nfev": 100,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_regular_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 4.774847184307873e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 7.048583938740194e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_regular_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 5.6843418860808015e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 2.603428583825007e-11,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_correlated_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 3.751665644813329e-11,
+      "nfev": 100,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_correlated_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 2.148681232938543e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 9.777068044058979e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 2.660272002685815e-11,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_correlated_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 2.0691004465334117e-11,
+      "nfev": 104,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_correlated_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 2.3987922759260982e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 6.0254023992456496e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 9.322320693172514e-12,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_correlated_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 1.7621459846850485e-11,
+      "nfev": 76,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.5688783605583012e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 9.663381206337363e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 4.3996806198265404e-11,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_correlated_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 2.05773176276125e-11,
+      "nfev": 76,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 8.185452315956354e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_correlated_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 1.057287590811029e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 3.387867764104158e-11,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_overlap_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 5.6843418860808015e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.2050804798491299e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 1.2164491636212915e-11,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 4.069988790433854e-11,
+      "nfev": 124,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_overlap_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 2.660272002685815e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 7.617018127348274e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 1.659827830735594e-11,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 2.262368070660159e-11,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_overlap_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 4.661160346586257e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.77351466845721e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 4.888534022029489e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 2.6261659513693303e-11,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1543_overlap_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 1.1368683772161603e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 9.208633855450898e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1543_overlap_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 7.73070496506989e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 1.9554136088117957e-11,
+      "nfev": 112,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_regular_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 1.261923898709938e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 7.617018127348274e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 7.048583938740194e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 3.956301952712238e-11,
+      "nfev": 92,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_regular_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 8.86757334228605e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.432454155292362e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 7.958078640513122e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 5.161382432561368e-11,
+      "nfev": 108,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_regular_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 6.821210263296962e-13,
+      "nfev": 48,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 9.43600753089413e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 4.320099833421409e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 7.389644451905042e-12,
+      "nfev": 88,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_regular_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 1.7053025658242404e-11,
+      "nfev": 48,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 6.59383658785373e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_regular_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 6.59383658785373e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 3.637978807091713e-12,
+      "nfev": 88,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_correlated_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 2.7284841053187847e-11,
+      "nfev": 100,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_correlated_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.4438228390645236e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 2.3305801732931286e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 2.1373125491663814e-11,
+      "nfev": 92,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_correlated_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 4.217781679471955e-11,
+      "nfev": 92,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_correlated_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.5347723092418164e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 4.433786671143025e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 2.9672264645341784e-11,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_correlated_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 2.2851054382044822e-11,
+      "nfev": 48,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.3642420526593924e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 1.7848833522293717e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 2.6489033189136535e-11,
+      "nfev": 92,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_correlated_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 3.8539837987627834e-11,
+      "nfev": 48,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 2.0691004465334117e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_correlated_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 6.934897101018578e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p0_j0_ar0",
+      "spec": "clean",
+      "nll_error": 1.3301360013429075e-11,
+      "nfev": 92,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_overlap_p0_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 5.4569682106375694e-12,
+      "nfev": 60,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p0_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.9326762412674725e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p0_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 6.139089236967266e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p0_j1_ar0",
+      "spec": "clean",
+      "nll_error": 3.149125404888764e-11,
+      "nfev": 112,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_overlap_p0_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 1.3415046851150692e-11,
+      "nfev": 60,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p0_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.3301360013429075e-11,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p0_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 9.890754881780595e-12,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p1_j0_ar0",
+      "spec": "clean",
+      "nll_error": 2.7284841053187847e-12,
+      "nfev": 96,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_overlap_p1_j0_ar0",
+      "spec": "underfit",
+      "nll_error": 2.0463630789890885e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p1_j0_ar1",
+      "spec": "clean",
+      "nll_error": 1.9099388737231493e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p1_j0_ar1",
+      "spec": "underfit",
+      "nll_error": 6.252776074688882e-12,
+      "nfev": 36,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p1_j1_ar0",
+      "spec": "clean",
+      "nll_error": 2.523847797419876e-11,
+      "nfev": 112,
+      "fallback": "boundary_solution"
+    },
+    {
+      "id": "s1663_overlap_p1_j1_ar0",
+      "spec": "underfit",
+      "nll_error": 3.183231456205249e-12,
+      "nfev": 44,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p1_j1_ar1",
+      "spec": "clean",
+      "nll_error": 1.432454155292362e-11,
+      "nfev": 40,
+      "fallback": null
+    },
+    {
+      "id": "s1663_overlap_p1_j1_ar1",
+      "spec": "underfit",
+      "nll_error": 2.3874235921539366e-12,
+      "nfev": 36,
+      "fallback": null
+    }
+  ]
+}

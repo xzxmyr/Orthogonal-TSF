@@ -1,0 +1,7 @@
+# R6 训练前冻结协议
+新种子1429/1543/1663，72配置=种子×regular/correlated/overlap×周期×乘积×AR；四段各1200：base1..1200、structure1201..2400、H2401..3600、holdout3601..4800。已查看保留后只作开发信息；旧轮不训练、不改权重。
+四结构generation OLS、filtered OLS、moment GLS、innovation residual ML GLS；三规范clean、删M二次underfit、anchor(2,-1)；每结构独立比较first、自由state、固定fixed H。72base、216generation OLS、216filtered OLS、216moment GLS、216likelihood GLS、2592H。ML只在clean/underfit各拟合一次，共144优化；anchor用clean同一协方差，因正确基下改变锚点只重参数化总信号。每次优化单一起点，最多160目标评估、35迭代、10线搜索；预检独立小样本调用另记，不计入主训练数。额外计算不声称同计算预算。
+ML使用结构段初始OLS中心化残差，不是联合结构ML或REML。Sigma_ij=v*rho^|i-j|+R delta_ij，Q=v(1-rho²)。优化rho∈[.001,.975]、v/g0与R/g0∈[1e-6,4]，g0为结构段残差方差；初值为可接受矩参数，矩回退则(.5,.5,.5)，裁入边界。精确平稳先验创新NLL=.5 sum[log(2pi F)+innovation²/F]。IID为rho=v=Q=0,R=g0；AR需2(NLL_IID-NLL_AR)>2log(n)（两额外参数的固定BIC门槛）。不收敛、数值失败、预算耗尽、距离边界<1e-5或未胜过IID均回退IID；记录拟合theta/NLL/边界/消息/实际评估数。不能把IID接受叫自然噪声识别。GLS在冻结协方差上一次求解，之后不重估协方差。
+结构及矩对照保持R5公式。历史e_prev=y_prev-g_hat_prev-mu，mu=mean_structure(y-g_hat)，a_prev处理过去残差后的posterior。first为h0+h1e；state为h0+h1e+h2a；fixed为rho*a-bl*e+h0，仅在独立H段拟合截距。新增H_state=(rho-bl)*a、H_remainder=-bl*(e-a)、H_calibration=H-H_state-H_remainder；fixed的calibration为拟合h0，自由H另有时变校准，不能假装相同分解恢复自然源。所有状态仅过去标签，mu与GLS c分列。输入t、当前/过去x,z、过去y与冻结映射，无真实rho/A/eps。
+所有开关/规范/候选保存原始及结构段中心化源MSE、bias、RMS，有限生成层、代理/状态/H诊断、完整预测及相同当前四点干预(0,0),(.5,0),(0,.4),(.5,.4)，过去x/z/y/H及真AR/noise固定，f0一致，corr=null。不拿holdout选参数/惩罚/候选。
+复核白化设计和截距、posterior/prior、mu/c、原始及中心化闭合、加载逐点、单点批量、未来标签/协变量隔离、映射冻结、组内冗余、跨组零空间支持内和离支持、锚点等价。保留相关源抵消、漏基、秩亏失败；无总体/因果/测量误差/部署结论。

@@ -1,0 +1,10 @@
+{
+  "base": 72,
+  "generation_ols": 216,
+  "filtered_ols": 216,
+  "gls": 216,
+  "likelihood_gls": 216,
+  "likelihood_fit": 144,
+  "likelihood_nfev": 8464,
+  "H": 2592
+}
